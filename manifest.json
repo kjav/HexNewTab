@@ -1,7 +1,7 @@
 {
   "name": "HexTab",
   "version": "0.5.0",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "description": "This extension was created with the awesome extensionizr.com",
   "icons": {
     "16": "icons/icon16.png",
@@ -10,11 +10,6 @@
   },
   "permissions": ["geolocation"],
   "default_locale": "en",
-  "page_action": {
-    "default_icon": "icons/icon19.png",
-    "default_title": "page action demo",
-    "default_popup": "src/page_action/page_action.html"
-  },
   "chrome_url_overrides": {
     "newtab": "src/override/override.html"
   }

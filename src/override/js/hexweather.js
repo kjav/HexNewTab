@@ -80,7 +80,7 @@ function Clear(day, low, high) {
         </g>\
 </g>\
 <text x="256" y="620" font-size="88" font-family="Verdana" text-anchor="middle">' + day + '</text>\
-<text x="256" y="700" font-size="60" font-family="Verdana" text-anchor="middle">' + high + ' - ' + low + '</text>\
+<text x="256" y="700" font-size="60" font-family="Verdana" text-anchor="middle">' + high + '° - ' + low + '°</text>\
 </svg>';
 }
 
@@ -110,7 +110,7 @@ function Clouds(day, low, high) {
 	</g>\
 </g>\
 <text x="256" y="620" font-size="88" font-family="Verdana" text-anchor="middle">' + day + '</text>\
-<text x="256" y="700" font-size="60" font-family="Verdana" text-anchor="middle">' + high + ' - ' + low + '</text>\
+<text x="256" y="700" font-size="60" font-family="Verdana" text-anchor="middle">' + high + '° - ' + low + '°</text>\
 </svg>';
 }
 
@@ -131,6 +131,8 @@ function Rain(day, low, high) {
 	</g>\
 </g>\
 <text x="256" y="620" font-size="88" font-family="Verdana" text-anchor="middle">' + day + '</text>\
-<text x="256" y="700" font-size="60" font-family="Verdana" text-anchor="middle">' + high + ' - ' + low + '</text>\
+<text x="256" y="700" font-size="60" font-family="Verdana" text-anchor="middle">' + high + '° - ' + low + '°</text>\
 </svg>'
 }
+
+getLocation();
