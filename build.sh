@@ -1,4 +1,4 @@
-zip -r file.zip .
-zip -d file.zip icons/Icon.xcf
-zip -d file.zip build.sh
-zip -d file.zip *.zip
+
+#!/bin/bash
+zip -r $1 src icons _locales README.md manifest.json
+zip -d $1 icons/Icon.xcf
