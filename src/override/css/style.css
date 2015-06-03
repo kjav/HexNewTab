@@ -1,0 +1,42 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300|Ubuntu:300);
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #eee;
+}
+
+html, body {
+    height: 100%;
+}
+
+#hexClock {
+    position: relative;
+    height: 100px;
+    top: 15%;
+    margin-top: -50px;
+    text-align: center;
+}
+
+#time {
+    font-size: 150px;
+    font-family: 'Lato';
+}
+
+#hexColor {
+    margin-top: 50px;
+    font-family: 'Ubuntu';
+}
+
+.weathercontainer {
+}
+
+.weathericon {
+  width: 12%;
+  height: 12%;
+  margin: 0;
+  padding: 0;
+  padding-right: 2%;
+  fill: white;
+  stroke: white;
+}
