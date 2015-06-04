@@ -1,6 +1,13 @@
 (function() {
   'use strict';
 
+  var monthNames = [
+    'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
+  ];
+  var dayNames = [
+    'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
+  ];
+
   /**
   * Converts the current time to a hex color and then changes the background to that color every second
   */
@@ -27,6 +34,19 @@
 
     // Update the current hex value
     document.getElementById('hexColor').innerHTML = color;
+
+    // Set date
+    var day = clock.getDate();
+    if (day % 10 == 1) {
+      day = day + 'st';
+    } else if (day == 2 || day == 22) {
+      day = day + 'nd';
+    } else if (day == 3 || day == 23) {
+      day = day + 'rd';
+    } else {
+      day = day + 'th';
+    }
+    date.innerHTML = dayNames[clock.getDay()] + ' ' + day + ' ' + monthNames[clock.getMonth()];
   }
 
   window.onload = function() {
