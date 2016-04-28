@@ -37,11 +37,13 @@
 
     // Set date
     var day = clock.getDate();
-    if (day % 10 == 1) {
+    if (day % 100 == 11 || day % 100 == 12 || day % 100 == 13) {
+      day = day + 'th';
+    } else if (day % 10 == 1) {
       day = day + 'st';
-    } else if (day == 2 || day == 22) {
+    } else if (day % 10 == 2) {
       day = day + 'nd';
-    } else if (day == 3 || day == 23) {
+    } else if (day % 10 == 3) {
       day = day + 'rd';
     } else {
       day = day + 'th';
@@ -52,9 +54,6 @@
   window.onload = function() {
     // Update the clock every second
     displayHexClock();
-    setTimeout(function() { displayHexClock(); setInterval(displayHexClock, 1000); }, 1000 - 
-(+new Date() 
-% 
-1000));
+    setTimeout(function() { displayHexClock(); setInterval(displayHexClock, 1000); }, 1000 - (+new Date() % 1000));
   };
 })();

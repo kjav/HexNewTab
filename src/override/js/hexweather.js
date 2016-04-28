@@ -14,7 +14,7 @@ function getLocation() {
 function check(loc) {
   var req = new XMLHttpRequest();
   // loc: lat=x&lon=y || q=Oxford,uk
-  req.open('GET', 'http://api.openweathermap.org/data/2.5/forecast/daily?' + loc + '&mode=json&units=metric&cnt=5', true);
+  req.open('GET', 'http://api.openweathermap.org/data/2.5/forecast/daily?' + loc + '&mode=json&units=metric&cnt=5&APPID=a238e82fa05b7c0e8df0d1c1d443969c', true);
   req.onreadystatechange = function() {
     if (req.readyState==4 && req.status==200) {
       setWeather(JSON.parse(req.responseText));
