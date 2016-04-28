@@ -52,6 +52,9 @@
   window.onload = function() {
     // Update the clock every second
     displayHexClock();
-    setInterval(displayHexClock, 1000);
+    setTimeout(function() { displayHexClock(); setInterval(displayHexClock, 1000); }, 1000 - 
+(+new Date() 
+% 
+1000));
   };
 })();
